@@ -1,0 +1,49 @@
+
+	Welcome to FFV   	Version 
+
+	FlowBase         	Version 1.5.4
+
+	Challenge : Rectangular
+
+
+----------
+
+
+	>> Tables
+
+	No. of Medium    =   2
+	No. of LocalBC   =   3
+	----------------------
+	No. of Component =   5
+
+
+----------
+
+
+	>> Medium List
+
+	  no :            Alias  Physical constant
+	 ----------------------------------------------------------------------
+	   1 :              Air
+				 Mass density         1.176300e+00 [kg/m^3]
+				 Kinematic viscosity  1.583000e-05 [m^2/s]
+				 Viscosity            1.862000e-05 [Pa s]
+				 Specific heat        1.007000e+03 [J/(Kg K)]
+				 Thermal conductivity 2.614000e-02 [W/(m K)]
+				 Speed of sound       3.400000e+02 [m/s]
+				 Volume expansion     4.000000e-05 [1/K]
+	   2 :               Fe
+				 Mass density         7.870000e+03 [kg/m^3]
+				 Specific heat        4.420000e+02 [J/(Kg K)]
+				 Thermal conductivity 8.030000e+01 [W/(m K)]
+
+
+----------
+
+	>> Fill Hint
+
+	 No.        Kind       Medium   Direction / Coordinate(ND)
+	--------------------------------------------------------------------------
+	  1          air   Direction = X-
+
+----------

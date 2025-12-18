@@ -1,0 +1,41 @@
+	imax, jmax, kmax    =            32            32            32     >>  32.77 (K cells)
+
+	(dx, dy, dz)  [m] / [-] = ( 3.125000e-02  3.125000e-02  3.125000e-02)  /  ( 3.125000e-02  3.125000e-02  3.125000e-02)
+	(ox, oy, oz)  [m] / [-] = (-5.000000e-01 -5.000000e-01 -5.000000e-01)  /  (-5.000000e-01 -5.000000e-01 -5.000000e-01)
+	(Lx, Ly, Lz)  [m] / [-] = ( 1.000000e+00  1.000000e+00  1.000000e+00)  /  ( 1.000000e+00  1.000000e+00  1.000000e+00)
+
+
+Domain    0
+	 ix, jx,  kx        [-] =             32            32            32
+	(ox, oy, oz)  [m] / [-] = (-5.000000e-01 -5.000000e-01 -5.000000e-01)  /  (-5.000000e-01 -5.000000e-01 -5.000000e-01)
+	(Lx, Ly, Lz)  [m] / [-] = ( 1.000000e+00  1.000000e+00  1.000000e+00)  /  ( 1.000000e+00  1.000000e+00  1.000000e+00)
+
+	 no            Label    i_st    i_ed    j_st    j_ed    k_st    k_ed
+	  3         obstacle       0       0       0       0       0       0
+	  4        outerWall       0       0       0       0       0       0
+	  5        slideWall       0       0       0       0       0       0
+
+
+	--------------------------------------------------
+	Report of Whole Domain Statistics
+	Domain size         =      32      32      32
+	Number of voxels    = 3.276800e+04
+	Number of surface   = 6.144000e+03
+	Effective voxels    = 3.276800e+04 (100.00%)
+	Fluid voxels        = 3.276800e+04 (100.00%)
+	Wall  voxels        = 0.000000e+00 (  0.00%)
+	Division :          = 1 : Serial
+
+	--------------------------------------------------
+	Domain Statistics per MPI process
+	Mean volume in each domain           = 3.276800e+04
+	Std. deviation of domain             = 0.000000e+00
+	Mean comm. in each domain            = 0.000000e+00
+	Std. deviation of surface            = 0.000000e+00
+	Mean effective volume in each domain = 3.276800e+04
+	Std. deviation of effective volume   = 0.000000e+00
+
+	Domain :     ix     jx     kx       Volume Vol_dv[%]      Surface Srf_dv[%] Fluid[%] Solid[%]      Eff_Vol Eff_Vol_dv[%]      Eff_Srf Eff_srf_dv[%]  Itr_scheme
+	----------------------------------------------------------------------------------------------------
+	     0 :     32     32     32   3.2768e+04     0.000   0.0000e+00     0.000  100.000    0.000   3.2768e+04         0.000 
+	---------------------------------------------------------------------------------------------------------------------------------------------------------------------

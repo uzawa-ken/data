@@ -1,0 +1,33 @@
+Domain {
+
+  GlobalOrigin        = (0.000000e+00, 0.000000e+00, 0.000000e+00)
+  GlobalRegion        = (8.000000e+00, 2.000000e+00, 4.000000e+00)
+  GlobalVoxel         = (8, 10, 4)
+  GlobalDivision      = (1, 1, 1)
+  ActiveSubdomainFile = ""
+
+}
+
+MPI {
+
+  NumberOfRank   = 1
+  NumberOfGroup  = 1
+
+}
+
+Process {
+
+  Rank[@] {
+
+    ID        = 0
+    HostName  = "IBM-PF3AHEJF"
+    VoxelSize = (8, 10, 4)
+    HeadIndex = (1, 1, 1)
+    TailIndex = (8, 10, 4)
+
+    CellID    = 0
+    BCflagID  = 0
+
+  }
+
+}

@@ -1,0 +1,93 @@
+FileInfo {
+
+  DFIType            = "Cartesian"
+  DirectoryPath      = "hoge"
+  TimeSliceDirectory = "off"
+  Prefix             = "fvel"
+  FileFormat         = "sph"
+  FieldFilenameFormat= "step_rank"
+  GuideCell          = 2
+  DataType           = "Float64"
+  Endian             = "little"
+  NumVariables       = 3
+  Variable[@]{ name  = "fu" }
+  Variable[@]{ name  = "fv" }
+  Variable[@]{ name  = "fw" }
+
+}
+
+FilePath {
+
+  Process = "./proc.dfi"
+
+}
+
+VisIt {
+
+  PlotGuideCell = "off"
+  ResultFormat  =  "FBinary"
+
+}
+
+UnitList {
+
+  Length {
+    Unit       = "M"
+    Reference  = 1.000000e+00
+  }
+  Pressure {
+    Unit       = "Pa"
+    Reference  = 0.000000e+00
+    Difference = 1.176300e+00
+  }
+  Velocity {
+    Unit       = "m/s"
+    Reference  = 1.000000e+00
+  }
+
+}
+
+TimeSlice {
+
+  Slice[@] {
+    Step = 0
+    Time = 0.000000e+00
+    VectorMinMax {
+      Min = 0.000000e+00
+      Max = 0.000000e+00
+    }
+    MinMax[@] {
+      Min = 0.000000e+00
+      Max = 0.000000e+00
+    }
+    MinMax[@] {
+      Min = 0.000000e+00
+      Max = 0.000000e+00
+    }
+    MinMax[@] {
+      Min = 0.000000e+00
+      Max = 0.000000e+00
+    }
+  }
+  Slice[@] {
+    Step = 100
+    Time = 6.250000e-01
+    VectorMinMax {
+      Min = 0.000000e+00
+      Max = 3.154573e-04
+    }
+    MinMax[@] {
+      Min = -1.650282e-04
+      Max = 1.658208e-04
+    }
+    MinMax[@] {
+      Min = -7.600828e-07
+      Max = 7.626183e-07
+    }
+    MinMax[@] {
+      Min = -3.154573e-04
+      Max = 4.612382e-05
+    }
+  }
+}
+

@@ -1,0 +1,72 @@
+FileInfo {
+
+  DFIType            = "Cartesian"
+  DirectoryPath      = "hoge"
+  TimeSliceDirectory = "off"
+  Prefix             = "tmp"
+  FileFormat         = "sph"
+  FieldFilenameFormat= "step_rank"
+  GuideCell          = 2
+  DataType           = "Float64"
+  Endian             = "little"
+  NumVariables       = 1
+  Variable[@]{ name  = "Temperature" }
+
+}
+
+FilePath {
+
+  Process = "./proc.dfi"
+
+}
+
+VisIt {
+
+  PlotGuideCell = "off"
+  ResultFormat  =  "FBinary"
+
+}
+
+UnitList {
+
+  Length {
+    Unit       = "M"
+    Reference  = 1.000000e+00
+  }
+  Pressure {
+    Unit       = "Pa"
+    Reference  = 0.000000e+00
+    Difference = 1.176300e+00
+  }
+  Temperature {
+    Unit       = "Celsius"
+    Reference  = 2.000000e+01
+    Difference = 1.000000e+02
+  }
+  Velocity {
+    Unit       = "m/s"
+    Reference  = 1.000000e+00
+  }
+
+}
+
+TimeSlice {
+
+  Slice[@] {
+    Step = 0
+    Time = 0.000000e+00
+    MinMax[@] {
+      Min = 1.000000e+02
+      Max = 1.000000e+02
+    }
+  }
+  Slice[@] {
+    Step = 100
+    Time = 6.250000e-01
+    MinMax[@] {
+      Min = 9.723233e+01
+      Max = 1.000007e+02
+    }
+  }
+}
+

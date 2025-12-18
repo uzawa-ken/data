@@ -1,0 +1,67 @@
+FileInfo {
+
+  DFIType            = "Cartesian"
+  DirectoryPath      = "sph"
+  TimeSliceDirectory = "off"
+  Prefix             = "div"
+  FileFormat         = "sph"
+  FieldFilenameFormat= "step_rank"
+  GuideCell          = 1
+  DataType           = "Float64"
+  Endian             = "little"
+  NumVariables       = 1
+  Variable[@]{ name  = "Divergence" }
+
+}
+
+FilePath {
+
+  Process = "./proc.dfi"
+
+}
+
+VisIt {
+
+  PlotGuideCell = "off"
+  ResultFormat  =  "FBinary"
+
+}
+
+UnitList {
+
+  Length {
+    Unit       = "M"
+    Reference  = 1.000000e+00
+  }
+  Pressure {
+    Unit       = "Pa"
+    Reference  = 0.000000e+00
+    Difference = 1.000000e+00
+  }
+  Velocity {
+    Unit       = "m/s"
+    Reference  = 1.000000e+00
+  }
+
+}
+
+TimeSlice {
+
+  Slice[@] {
+    Step = 0
+    Time = 0.000000e+00
+    MinMax[@] {
+      Min = -1.000000e+00
+      Max = 0.000000e+00
+    }
+  }
+  Slice[@] {
+    Step = 5
+    Time = 1.000000e-02
+    MinMax[@] {
+      Min = -1.695749e-01
+      Max = 2.714068e-01
+    }
+  }
+}
+

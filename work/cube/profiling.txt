@@ -1,0 +1,59 @@
+
+# PMlib Basic Report -------------------------------------------------------
+
+	Timing Statistics Report from PMlib version 6.4.2
+	Linked PMlib supports: MPI, OpenMP, no-HWPC, no-OTF
+	Host name : IBM-PF3AHEJF
+	Date      : 2024/09/03 : 00:53:45
+	Kenji_Ono
+	Parallel Mode:   OpenMP (8 threads)
+
+	PMlib enabled elapse time (from initialize to print) = 1.721e-01 [sec]
+	Exclusive sections and inclusive sections are reported below.
+	Inclusive sections, marked with (*), are not added in the statistics total.
+
+	Section                     |    call  |        accumulated time[sec]           | user defined numerical performance
+	Label                       |          |      avr   avr[%]     sdv    avr/call  |  operations   sdv    performance
+	----------------------------+----------+----------------------------------------+----------------------------
+	Time_Step_Loop_Section(*)   :      100   1.447e-01  84.12  0.00e+00  1.447e-03    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Flow_Section(*)             :      100   6.623e-02  38.49  0.00e+00  6.623e-04    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Loop_Utility_Section(*)     :      100   6.232e-02  36.22  0.00e+00  6.232e-04    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Force_Calculation           :      100   2.987e-02  17.36  0.00e+00  2.987e-04    1.200e+03  0.00e+00   0.04 Mflops
+	NS__F_Step_Section(*)       :      100   2.842e-02  16.52  0.00e+00  2.842e-04    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Copy_Array                  :      100   2.609e-02  15.16  0.00e+00  2.609e-04    0.000e+00  0.00e+00   0.00 Mflops
+	Initialization_Section(*)   :        1   2.358e-02  13.70  0.00e+00  2.358e-02    0.000e+00  0.00e+00   0.00 Mflops(*)
+	History_out                 :      400   2.347e-02  13.64  0.00e+00  5.867e-05    0.000e+00  0.00e+00   0.00 Mflops
+	Poisson__Source_Section(*)  :      100   2.137e-02  12.42  0.00e+00  2.137e-04    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Poisson_Src_VBC             :      100   2.013e-02  11.70  0.00e+00  2.013e-04    0.000e+00  0.00e+00   0.00 Mflops
+	Voxel_Prep_Section(*)       :        1   1.776e-02  10.32  0.00e+00  1.776e-02    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Search_Vmax                 :      100   1.607e-02   9.34  0.00e+00  1.607e-04    4.610e+05  0.00e+00  28.69 Mflops
+	VP-Iteration_Section(*)     :      100   1.477e-02   8.58  0.00e+00  1.477e-04    0.000e+00  0.00e+00   0.00 Mflops(*)
+	2-colored_SOR_stride(*)     :      101   1.065e-02   6.19  0.00e+00  1.055e-04    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Poisson_SOR2_SMA            :     2384   9.141e-03   5.31  0.00e+00  3.834e-06    3.484e+07  0.00e+00   3.81 Gflops
+	Fill                        :        1   4.680e-03   2.72  0.00e+00  4.680e-03    0.000e+00  0.00e+00   0.00 Mflops
+	Velocity_BC                 :      101   2.071e-03   1.20  0.00e+00  2.050e-05    0.000e+00  0.00e+00   0.00 Mflops
+	NS__Loop_Post_Section(*)    :      100   1.499e-03   0.87  0.00e+00  1.499e-05    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Domain_Monitor              :      100   1.444e-03   0.84  0.00e+00  1.444e-05    0.000e+00  0.00e+00   0.00 Mflops
+	Pvec_Flux_BC                :      100   1.083e-03   0.63  0.00e+00  1.083e-05    2.304e+05  0.00e+00 212.77 Mflops
+	Projection_Velocity_BC      :      101   1.080e-03   0.63  0.00e+00  1.069e-05    0.000e+00  0.00e+00   0.00 Mflops
+	Divergence_of_Pvec          :      100   8.142e-04   0.47  0.00e+00  8.142e-06    1.692e+06  0.00e+00   2.08 Gflops
+	Pvec_Central                :      100   7.570e-04   0.44  0.00e+00  7.570e-06    1.920e+07  0.00e+00  25.37 Gflops
+	File_Output                 :        1   6.529e-04   0.38  0.00e+00  6.529e-04    3.379e+04  0.00e+00  51.75 Mflops
+	Variation_Space             :      100   5.592e-04   0.32  0.00e+00  5.592e-06    3.328e+06  0.00e+00   5.95 Gflops
+	Poisson_BC                  :     2384   5.237e-04   0.30  0.00e+00  2.197e-07    0.000e+00  0.00e+00   0.00 Mflops
+	Projection_Velocity         :      101   5.048e-04   0.29  0.00e+00  4.998e-06    4.346e+06  0.00e+00   8.61 Gflops
+	Allocate_Arrays             :        3   3.164e-04   0.18  0.00e+00  1.055e-04    0.000e+00  0.00e+00   0.00 Mflops
+	Poisson_Src_Norm            :      100   2.994e-04   0.17  0.00e+00  2.994e-06    2.058e+05  0.00e+00 687.36 Mflops
+	Norm_Div_max                :      101   2.676e-04   0.16  0.00e+00  2.650e-06    1.034e+05  0.00e+00 386.46 Mflops
+	Pvec_Euler_Explicit         :      100   2.419e-04   0.14  0.00e+00  2.419e-06    4.096e+05  0.00e+00   1.69 Gflops
+	Encode_BCindex              :        1   2.283e-04   0.13  0.00e+00  2.283e-04    0.000e+00  0.00e+00   0.00 Mflops
+	Statistic(*)                :        1   8.442e-05   0.05  0.00e+00  8.442e-05    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Pvec_BC                     :      100   5.095e-05   0.03  0.00e+00  5.095e-07    0.000e+00  0.00e+00   0.00 Mflops
+	Gather_DomainInfo           :        1   4.645e-05   0.03  0.00e+00  4.645e-05    0.000e+00  0.00e+00   0.00 Mflops
+	Restart_Process             :        1   9.299e-07   0.00  0.00e+00  9.299e-07    0.000e+00  0.00e+00   0.00 Mflops
+	Compo_Fraction              :        1   5.836e-07   0.00  0.00e+00  5.836e-07    0.000e+00  0.00e+00   0.00 Mflops
+	Search_CutRef               :        1   4.979e-07   0.00  0.00e+00  4.979e-07    0.000e+00  0.00e+00   0.00 Mflops
+	----------------------------+----------+----------------------------------------+----------------------------
+	Sections per process                     1.404e-01     -Exclusive CALC sections-  6.485e+07           461.91 Mflops
+	----------------------------+----------+----------------------------------------+----------------------------
+	Sections total job                       1.404e-01     -Exclusive CALC sections-  6.485e+07           461.91 Mflops

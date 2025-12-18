@@ -1,0 +1,70 @@
+
+# PMlib Basic Report -------------------------------------------------------
+
+	Timing Statistics Report from PMlib version 6.4.2
+	Linked PMlib supports: MPI, OpenMP, no-HWPC, no-OTF
+	Host name : IBM-PF3AHEJF
+	Date      : 2024/10/24 : 23:15:46
+	Ken_Uzawa
+	Parallel Mode:   OpenMP (8 threads)
+
+	PMlib enabled elapse time (from initialize to print) = 8.238e-01 [sec]
+	Exclusive sections and inclusive sections are reported below.
+	Inclusive sections, marked with (*), are not added in the statistics total.
+
+	Section                     |    call  |        accumulated time[sec]           | user defined numerical performance
+	Label                       |          |      avr   avr[%]     sdv    avr/call  |  operations   sdv    performance
+	----------------------------+----------+----------------------------------------+----------------------------
+	Time_Step_Loop_Section(*)   :      100   7.274e-01  88.30  0.00e+00  7.274e-03    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Loop_Utility_Section(*)     :      100   3.095e-01  37.57  0.00e+00  3.095e-03    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Flow_Section(*)             :      100   2.448e-01  29.72  0.00e+00  2.448e-03    0.000e+00  0.00e+00   0.00 Mflops(*)
+	VP-Iteration_Section(*)     :      100   1.084e-01  13.16  0.00e+00  1.084e-03    0.000e+00  0.00e+00   0.00 Mflops(*)
+	NS__F_Step_Section(*)       :      100   9.914e-02  12.03  0.00e+00  9.914e-04    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Initialization_Section(*)   :        1   9.549e-02  11.59  0.00e+00  9.549e-02    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Heat_Section(*)             :      100   9.122e-02  11.07  0.00e+00  9.122e-04    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Search_Vmax                 :      100   8.141e-02   9.88  0.00e+00  8.141e-04    2.949e+07  0.00e+00 362.26 Mflops
+	2-colored_SOR_stride(*)     :      116   7.241e-02   8.79  0.00e+00  6.243e-04    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Poisson_SOR2_SMA            :     2250   7.073e-02   8.59  0.00e+00  3.144e-05    2.101e+09  0.00e+00  29.71 Gflops
+	History_out                 :      300   4.971e-02   6.03  0.00e+00  1.657e-04    0.000e+00  0.00e+00   0.00 Mflops
+	Pvec_Central                :      100   4.290e-02   5.21  0.00e+00  4.290e-04    1.229e+09  0.00e+00  28.64 Gflops
+	Thermal_Convection          :      100   3.925e-02   4.76  0.00e+00  3.925e-04    9.142e+08  0.00e+00  23.29 Gflops
+	Copy_Array                  :      200   3.854e-02   4.68  0.00e+00  1.927e-04    0.000e+00  0.00e+00   0.00 Mflops
+	NS__Loop_Post_Section(*)    :      100   2.927e-02   3.55  0.00e+00  2.927e-04    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Domain_Monitor              :      100   2.918e-02   3.54  0.00e+00  2.918e-04    0.000e+00  0.00e+00   0.00 Mflops
+	Variation_Space             :      100   2.571e-02   3.12  0.00e+00  2.571e-04    2.359e+08  0.00e+00   9.18 Gflops
+	Projection_Velocity         :      116   2.394e-02   2.91  0.00e+00  2.064e-04    3.193e+08  0.00e+00  13.34 Gflops
+	Thermal_Diff_EE             :      100   1.926e-02   2.34  0.00e+00  1.926e-04    6.324e+08  0.00e+00  32.84 Gflops
+	Voxel_Prep_Section(*)       :        1   1.745e-02   2.12  0.00e+00  1.745e-02    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Pvec_Flux_BC                :      100   1.343e-02   1.63  0.00e+00  1.343e-04    1.229e+06  0.00e+00  91.52 Mflops
+	Thermal_Diff_OBC_Face       :      100   1.223e-02   1.49  0.00e+00  1.223e-04    0.000e+00  0.00e+00   0.00 Mflops
+	assign_Const_to_Array       :      100   1.115e-02   1.35  0.00e+00  1.115e-04    0.000e+00  0.00e+00   0.00 Mflops
+	Projection_Velocity_BC      :      116   8.046e-03   0.98  0.00e+00  6.936e-05    0.000e+00  0.00e+00   0.00 Mflops
+	Poisson__Source_Section(*)  :      100   7.567e-03   0.92  0.00e+00  7.567e-05    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Encode_BCindex              :        1   6.666e-03   0.81  0.00e+00  6.666e-03    0.000e+00  0.00e+00   0.00 Mflops
+	Thermal_Convection_EE       :      100   6.474e-03   0.79  0.00e+00  6.474e-05    9.830e+06  0.00e+00   1.52 Gflops
+	File_Output                 :        1   5.930e-03   0.72  0.00e+00  5.930e-03    2.654e+06  0.00e+00 447.61 Mflops
+	Allocate_Arrays             :        3   5.073e-03   0.62  0.00e+00  1.691e-03    0.000e+00  0.00e+00   0.00 Mflops
+	Fill                        :        1   4.540e-03   0.55  0.00e+00  4.540e-03    0.000e+00  0.00e+00   0.00 Mflops
+	Pvec_Buoyancy               :      100   3.122e-03   0.38  0.00e+00  3.122e-05    3.932e+07  0.00e+00  12.59 Gflops
+	Poisson_Src_VBC             :      100   2.651e-03   0.32  0.00e+00  2.651e-05    0.000e+00  0.00e+00   0.00 Mflops
+	Poisson_Src_Norm            :      100   2.406e-03   0.29  0.00e+00  2.406e-05    1.311e+07  0.00e+00   5.45 Gflops
+	Divergence_of_Pvec          :      100   2.279e-03   0.28  0.00e+00  2.279e-05    1.081e+08  0.00e+00  47.45 Gflops
+	Pvec_Euler_Explicit         :      100   2.253e-03   0.27  0.00e+00  2.253e-05    2.621e+07  0.00e+00  11.64 Gflops
+	Norm_Div_max                :      116   1.995e-03   0.24  0.00e+00  1.720e-05    7.602e+06  0.00e+00   3.81 Gflops
+	Velocity_BC                 :      116   1.592e-03   0.19  0.00e+00  1.372e-05    0.000e+00  0.00e+00   0.00 Mflops
+	Poisson_BC                  :     2250   5.988e-04   0.07  0.00e+00  2.661e-07    0.000e+00  0.00e+00   0.00 Mflops
+	Gather_DomainInfo           :        1   1.440e-04   0.02  0.00e+00  1.440e-04    0.000e+00  0.00e+00   0.00 Mflops
+	Statistic(*)                :        1   1.159e-04   0.01  0.00e+00  1.159e-04    0.000e+00  0.00e+00   0.00 Mflops(*)
+	Pvec_BC                     :      100   1.127e-04   0.01  0.00e+00  1.127e-06    0.000e+00  0.00e+00   0.00 Mflops
+	Thermal_Diff_Outer_BC       :      200   1.082e-04   0.01  0.00e+00  5.410e-07    0.000e+00  0.00e+00   0.00 Mflops
+	Thermal_Diff_IBC_Face       :      100   8.399e-05   0.01  0.00e+00  8.399e-07    0.000e+00  0.00e+00   0.00 Mflops
+	Thermal_Convection_BC       :      100   6.697e-05   0.01  0.00e+00  6.697e-07    0.000e+00  0.00e+00   0.00 Mflops
+	Thermal_Diff_IBC_Vol        :      100   5.908e-05   0.01  0.00e+00  5.908e-07    0.000e+00  0.00e+00   0.00 Mflops
+	Thermal_Range_Cut           :      100   4.430e-05   0.01  0.00e+00  4.430e-07    0.000e+00  0.00e+00   0.00 Mflops
+	Compo_Fraction              :        1   1.199e-06   0.00  0.00e+00  1.199e-06    0.000e+00  0.00e+00   0.00 Mflops
+	Restart_Process             :        1   8.831e-07   0.00  0.00e+00  8.831e-07    0.000e+00  0.00e+00   0.00 Mflops
+	Search_CutRef               :        1   7.054e-07   0.00  0.00e+00  7.054e-07    0.000e+00  0.00e+00   0.00 Mflops
+	----------------------------+----------+----------------------------------------+----------------------------
+	Sections per process                     5.117e-01     -Exclusive CALC sections-  5.670e+09            11.08 Gflops
+	----------------------------+----------+----------------------------------------+----------------------------
+	Sections total job                       5.117e-01     -Exclusive CALC sections-  5.670e+09            11.08 Gflops

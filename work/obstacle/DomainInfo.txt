@@ -1,0 +1,43 @@
+	imax, jmax, kmax    =             8            10             4     >> 320.00 (cells)
+
+	(dx, dy, dz)  [m] / [-] = ( 1.000000e+00  2.000000e-01  1.000000e+00)  /  ( 1.000000e+00  2.000000e-01  1.000000e+00)
+	(ox, oy, oz)  [m] / [-] = ( 0.000000e+00  0.000000e+00  0.000000e+00)  /  ( 0.000000e+00  0.000000e+00  0.000000e+00)
+	(Lx, Ly, Lz)  [m] / [-] = ( 8.000000e+00  2.000000e+00  4.000000e+00)  /  ( 8.000000e+00  2.000000e+00  4.000000e+00)
+
+
+Domain    0
+	 ix, jx,  kx        [-] =              8            10             4
+	(ox, oy, oz)  [m] / [-] = ( 0.000000e+00  0.000000e+00  0.000000e+00)  /  ( 0.000000e+00  0.000000e+00  0.000000e+00)
+	(Lx, Ly, Lz)  [m] / [-] = ( 8.000000e+00  2.000000e+00  4.000000e+00)  /  ( 8.000000e+00  2.000000e+00  4.000000e+00)
+
+	 no            Label    i_st    i_ed    j_st    j_ed    k_st    k_ed
+	  3         obstacle       0       0       0       0       0       0
+	  4           inflow       0       0       0       0       0       0
+	  5          outflow       0       0       0       0       0       0
+	  6        outerWall       0       0       0       0       0       0
+	  7         periodic       0       0       0       0       0       0
+
+
+	--------------------------------------------------
+	Report of Whole Domain Statistics
+	Domain size         =       8      10       4
+	Number of voxels    = 3.200000e+02
+	Number of surface   = 3.040000e+02
+	Effective voxels    = 3.200000e+02 (100.00%)
+	Fluid voxels        = 3.200000e+02 (100.00%)
+	Wall  voxels        = 0.000000e+00 (  0.00%)
+	Division :          = 1 : Serial
+
+	--------------------------------------------------
+	Domain Statistics per MPI process
+	Mean volume in each domain           = 3.200000e+02
+	Std. deviation of domain             = 0.000000e+00
+	Mean comm. in each domain            = 0.000000e+00
+	Std. deviation of surface            = 0.000000e+00
+	Mean effective volume in each domain = 3.200000e+02
+	Std. deviation of effective volume   = 0.000000e+00
+
+	Domain :     ix     jx     kx       Volume Vol_dv[%]      Surface Srf_dv[%] Fluid[%] Solid[%]      Eff_Vol Eff_Vol_dv[%]      Eff_Srf Eff_srf_dv[%]  Itr_scheme
+	----------------------------------------------------------------------------------------------------
+	     0 :      8     10      4   3.2000e+02     0.000   0.0000e+00     0.000  100.000    0.000   3.2000e+02         0.000 
+	---------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,41 @@
+	imax, jmax, kmax    =             8             8             8     >> 512.00 (cells)
+
+	(dx, dy, dz)  [m] / [-] = ( 1.000000e-01  1.000000e-01  1.000000e-01)  /  ( 1.000000e-01  1.000000e-01  1.000000e-01)
+	(ox, oy, oz)  [m] / [-] = (-4.000000e-01 -4.000000e-01 -4.000000e-01)  /  (-4.000000e-01 -4.000000e-01 -4.000000e-01)
+	(Lx, Ly, Lz)  [m] / [-] = ( 8.000000e-01  8.000000e-01  8.000000e-01)  /  ( 8.000000e-01  8.000000e-01  8.000000e-01)
+
+
+Domain    0
+	 ix, jx,  kx        [-] =              8             8             8
+	(ox, oy, oz)  [m] / [-] = (-4.000000e-01 -4.000000e-01 -4.000000e-01)  /  (-4.000000e-01 -4.000000e-01 -4.000000e-01)
+	(Lx, Ly, Lz)  [m] / [-] = ( 8.000000e-01  8.000000e-01  8.000000e-01)  /  ( 8.000000e-01  8.000000e-01  8.000000e-01)
+
+	 no            Label    i_st    i_ed    j_st    j_ed    k_st    k_ed
+	  3         obstacle       0       0       0       0       0       0
+	  4        outerWall       0       0       0       0       0       0
+	  5        slideWall       0       0       0       0       0       0
+
+
+	--------------------------------------------------
+	Report of Whole Domain Statistics
+	Domain size         =       8       8       8
+	Number of voxels    = 5.120000e+02
+	Number of surface   = 3.840000e+02
+	Effective voxels    = 5.120000e+02 (100.00%)
+	Fluid voxels        = 5.120000e+02 (100.00%)
+	Wall  voxels        = 0.000000e+00 (  0.00%)
+	Division :          = 1 : Serial
+
+	--------------------------------------------------
+	Domain Statistics per MPI process
+	Mean volume in each domain           = 5.120000e+02
+	Std. deviation of domain             = 0.000000e+00
+	Mean comm. in each domain            = 0.000000e+00
+	Std. deviation of surface            = 0.000000e+00
+	Mean effective volume in each domain = 5.120000e+02
+	Std. deviation of effective volume   = 0.000000e+00
+
+	Domain :     ix     jx     kx       Volume Vol_dv[%]      Surface Srf_dv[%] Fluid[%] Solid[%]      Eff_Vol Eff_Vol_dv[%]      Eff_Srf Eff_srf_dv[%]  Itr_scheme
+	----------------------------------------------------------------------------------------------------
+	     0 :      8      8      8   5.1200e+02     0.000   0.0000e+00     0.000  100.000    0.000   5.1200e+02         0.000 
+	---------------------------------------------------------------------------------------------------------------------------------------------------------------------

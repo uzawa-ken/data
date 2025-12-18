@@ -1,0 +1,61 @@
+FileInfo {
+
+  DFIType            = "Cartesian"
+  DirectoryPath      = "sph"
+  TimeSliceDirectory = "off"
+  Prefix             = "prsa"
+  FileFormat         = "sph"
+  FieldFilenameFormat= "step_rank"
+  GuideCell          = 1
+  DataType           = "Float64"
+  Endian             = "little"
+  NumVariables       = 1
+  Variable[@]{ name  = "AvrPressure" }
+
+}
+
+FilePath {
+
+  Process = "./proc.dfi"
+
+}
+
+VisIt {
+
+  PlotGuideCell = "off"
+  ResultFormat  =  "FBinary"
+
+}
+
+UnitList {
+
+  Length {
+    Unit       = "M"
+    Reference  = 1.000000e+00
+  }
+  Pressure {
+    Unit       = "Pa"
+    Reference  = 0.000000e+00
+    Difference = 1.000000e+00
+  }
+  Velocity {
+    Unit       = "m/s"
+    Reference  = 1.000000e+00
+  }
+
+}
+
+TimeSlice {
+
+  Slice[@] {
+    Step = 5
+    Time = 1.000000e-02
+    AveragedStep = 5
+    AveragedTime = 1.000000e-02
+    MinMax[@] {
+      Min = -1.933896e+00
+      Max = 2.617931e+00
+    }
+  }
+}
+

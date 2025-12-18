@@ -1,0 +1,75 @@
+FileInfo {
+
+  DFIType            = "Cartesian"
+  DirectoryPath      = "sph"
+  TimeSliceDirectory = "off"
+  Prefix             = "vela"
+  FileFormat         = "sph"
+  FieldFilenameFormat= "step_rank"
+  GuideCell          = 1
+  DataType           = "Float64"
+  Endian             = "little"
+  NumVariables       = 3
+  Variable[@]{ name  = "Avr_U" }
+  Variable[@]{ name  = "Avr_V" }
+  Variable[@]{ name  = "Avr_W" }
+
+}
+
+FilePath {
+
+  Process = "./proc.dfi"
+
+}
+
+VisIt {
+
+  PlotGuideCell = "off"
+  ResultFormat  =  "FBinary"
+
+}
+
+UnitList {
+
+  Length {
+    Unit       = "M"
+    Reference  = 1.000000e+00
+  }
+  Pressure {
+    Unit       = "Pa"
+    Reference  = 0.000000e+00
+    Difference = 1.000000e+00
+  }
+  Velocity {
+    Unit       = "m/s"
+    Reference  = 1.000000e+00
+  }
+
+}
+
+TimeSlice {
+
+  Slice[@] {
+    Step = 5
+    Time = 1.000000e-02
+    AveragedStep = 5
+    AveragedTime = 1.000000e-02
+    VectorMinMax {
+      Min = 7.316535e-04
+      Max = 1.334503e-02
+    }
+    MinMax[@] {
+      Min = -6.624399e-04
+      Max = 1.012746e-03
+    }
+    MinMax[@] {
+      Min = -1.334491e-02
+      Max = 1.334491e-02
+    }
+    MinMax[@] {
+      Min = 0.000000e+00
+      Max = 0.000000e+00
+    }
+  }
+}
+
